@@ -1,0 +1,12 @@
+# Devenv
+.devenv*
+.envrc
+devenv.local.nix
+devenv.lock
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
+

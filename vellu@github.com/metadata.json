@@ -1,0 +1,8 @@
+{
+  "name": "gsp",
+  "description": "BSPWM-Like tiling for GNOME",
+  "uuid": "vellu@github.com",
+  "shell-version": [
+    "44.2"
+  ]
+}
