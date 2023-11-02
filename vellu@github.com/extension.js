@@ -30,7 +30,7 @@ const PopupMenu = imports.ui.popupMenu;
 const _ = ExtensionUtils.gettext;
 
 const extension = ExtensionUtils.getCurrentExtension();
-let { tile } = extension.imports.tiling;
+const { tile } = extension.imports.tiling;
 
 const Indicator = GObject.registerClass(
   class Indicator extends PanelMenu.Button {
