@@ -1,4 +1,4 @@
-class Node {
+class BinaryTree {
   constructor(root) {
     this.root = root;
     this.left = null;
@@ -7,9 +7,9 @@ class Node {
 
   insert(data) {
     if (this.left === null) {
-      this.left = new Node(data);
+      this.left = new BinaryTree(data);
     } else if (this.right == null) {
-      this.right = new Node(data);
+      this.right = new BinaryTree(data);
     } else {
       this.left.insert(data);
     }

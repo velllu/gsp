@@ -2,16 +2,13 @@ const Main = imports.ui.main;
 
 const ExtensionUtils = imports.misc.extensionUtils;
 const extension = ExtensionUtils.getCurrentExtension();
-const { Node } = extension.imports.binary_tree;
+// var { BinaryTree } = extension.imports.binary_tree;
+var BinaryTree = class BinaryTree {};
 
 function tile(windows) {
-  let tree = Node(windows[0]);
+  let tree = new BinaryTree(windows[0]);
 
-  for (let i = 1; i < windows.lenght; i++) {
-    // const monitor = Main.layoutManager.primaryMonitor;
-    // windows[i].move_resize_frame(false, 0, 0, monitor.width, monitor.height);
+  for (let i = 1; i < windows.length; i++) {
     tree.insert(windows[i]);
   }
-
-  Main.notify(tree);
 }
